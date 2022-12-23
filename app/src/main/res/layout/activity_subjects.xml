@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectsActivity">
+
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPublishSubject"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPublishSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Использование PublishSubject "
+        app:layout_constraintBottom_toTopOf="@+id/btnReplaySubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubject" />
+
+    <Button
+        android:id="@+id/btnReplaySubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Использование ReplaySubject "
+        app:layout_constraintBottom_toTopOf="@+id/btnBehaviorSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPublishSubject" />
+
+    <Button
+        android:id="@+id/btnBehaviorSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Использование BehaviorSubject"
+        app:layout_constraintBottom_toTopOf="@+id/btnAsyncSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReplaySubject" />
+
+    <Button
+        android:id="@+id/btnAsyncSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Использование AsyncSubject"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBehaviorSubject" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
